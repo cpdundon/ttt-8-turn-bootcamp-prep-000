@@ -10,5 +10,9 @@ def display_board(board)
 end
 
 def valid_move(board, idx)
+  if board.length == 0
+    return false
+  end  
+  
   
 end
