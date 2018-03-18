@@ -41,3 +41,7 @@ end
 def move(board, idx, xo = "X")
   board[idx] = xo
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
+end 
