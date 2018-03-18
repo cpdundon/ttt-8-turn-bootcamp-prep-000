@@ -37,3 +37,7 @@ def position_taken?(board, idx)
     true
   end
 end
+
+def move(board, idx, xo = "X")
+  
+end
