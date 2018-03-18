@@ -28,10 +28,10 @@ def position_taken?(board, idx)
   if board[idx] == nil
     return true
   end
-  
+
   out = board[idx].strip
   
-  if out == "X" || out == "O"
+  if out == "X" || out == "O"a
     return false
   else
     true
@@ -44,4 +44,11 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  display_board(board)
+  cell = gets.strip.to_i
+  
+  valid_move(board, idx)
+  
+  display_board(board)
 end 
+
