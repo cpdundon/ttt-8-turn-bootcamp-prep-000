@@ -10,6 +10,17 @@ def display_board(board)
 end
 
 def valid_move?(board, idx)
+  
+  idxGood = idx.between(0, 8)
+  
+  if !idxGood
+    return false
+  end
+  
+  position taken?(board, idx)
+end
+
+def position_taken?(board, idx)
   if board.length == 0
     return false
   end  
