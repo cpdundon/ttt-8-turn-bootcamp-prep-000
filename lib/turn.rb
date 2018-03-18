@@ -39,5 +39,5 @@ def position_taken?(board, idx)
 end
 
 def move(board, idx, xo = "X")
-  
+  board[idx] = xo
 end
